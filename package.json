@@ -16,6 +16,10 @@
       "minimal",
       "simple"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiegoZoracKy/cliss"
+  },
   "dependencies": {
     "command-line-usage": "^4.0.1",
     "deepmerge": "^2.0.0",
