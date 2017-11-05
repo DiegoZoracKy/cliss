@@ -248,12 +248,18 @@ args: a,r,g,s
 A property named **pipe** can also be defined on *cliSpec* in order to handle **stdin** and also, some steps of the execution flow (**before** and **after**). To define a single handle for all the commands, the **pipe** option can be defined on [Cliss options](#cliss-options) as will be shown later on the documentation. The pipeline execution of a command is:
 
 **stdin** *(command.pipe.stdin || clissOptions.pipe.stdin)* =>
-=> **clissOptions.pipe.before** =>
-=> **command.pipe.before** =>
-=> **command.action** =>
-=> **command.pipe.after** =>
-=> **clissOptions.pipe.after**
-=> **stdout**
+
+**clissOptions.pipe.before** =>
+
+**command.pipe.before** =>
+
+**command.action** =>
+
+**command.pipe.after** =>
+
+**clissOptions.pipe.after** =>
+
+**stdout**
 
 Where each of these steps can be handled if needed.
 
