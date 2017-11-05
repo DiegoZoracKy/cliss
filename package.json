@@ -1,6 +1,6 @@
 {
   "name": "cliss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI Simple, Stupid. Automatic discovery of parameters names. Provides an easy and minimal setup by passing in only a function reference without the need of declaring all expected options names or create a help section by hand. Support to sync / async. Support to subcommands down to N levels.",
   "main": "./lib/cliss.js",
   "scripts": {
