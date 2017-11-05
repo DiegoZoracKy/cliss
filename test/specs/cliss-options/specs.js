@@ -22,7 +22,7 @@ Commands:
 }, {
 	description: `command.subcommandsDelimiter = '-' + options.pipe.before + command.pipe.after`,
 	input: 'nested1-nested1.1  --param1=A',
-	output: `nested1-nested1.1:aoptionsPipecommandPipe`
+	output: `nested1-nested1.1:acommandPipeoptionsPipe`
 }];
 
 module.exports = tests;
