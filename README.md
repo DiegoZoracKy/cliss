@@ -4,6 +4,8 @@
 
 CLI Simple, Stupid. Automatic discovery of parameters names and support to subcommands down to N levels. Provides an easy and minimal setup by passing in only a function reference without the need of declaring all expected options names or create a help section by hand.
 
+Side note: It is worth taking a look at [MagiCLI](https://github.com/DiegoZoracKy/magicli), which is a module capable to create a CLI interface automatically for a module, instead of creating one by hand.
+
 ## Goals
 
  * Simple and easy API
