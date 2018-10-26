@@ -16,6 +16,8 @@ Commands:
   nested-command-variadic
   nested-command-set-with-no-action
   nested-command-set-with-action
+  nested-command-promise-async
+  nested-command-variadic-async
 `;
 
 const nestedCommand1HelpOutput = `

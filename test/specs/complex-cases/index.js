@@ -46,6 +46,20 @@ const cliSpec = {
 			name: 'inner-nested-command-set',
 			action: (param1, param2) => param2 + param2 + param1
 		}]
+	},
+
+	{
+		name: 'nested-command-promise-async',
+		action: async (...args) => {
+			return new Promise((resolve, reject) => {
+				setTimeout(() => resolve('promise resolved'), 1500);
+			});
+		}
+	}, {
+		name: 'nested-command-variadic-async',
+		action: async (...args) => {
+			return args.reduce((result, v) => result += v);
+		}
 	}]
 };
 
