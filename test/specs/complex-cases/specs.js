@@ -11,13 +11,14 @@ Usage:
 
 Commands:
 
-  nested-command-1                    nested-command-1 description
+  nested-command-1                       nested-command-1 description
   nested-command-promise
   nested-command-variadic
   nested-command-set-with-no-action
   nested-command-set-with-action
   nested-command-promise-async
   nested-command-variadic-async
+  nested-command-to-destructure-params
 `;
 
 const nestedCommand1HelpOutput = `
@@ -70,6 +71,17 @@ Commands:
 
   inner-nested-command-set
 `;
+
+const nestedCommandToDestructureParams = `
+Usage:
+
+  $ main-command nested-command-to-destructure-params [options]
+
+Options:
+
+  --f1
+  --f2
+`
 
 const tests = [{
 	description: 'Main command version',
@@ -131,6 +143,10 @@ const tests = [{
 	description: 'Nested command with action plus having more nested commands defined --help',
 	input: 'nested-command-set-with-action --help',
 	output: nestedCommandSetWithActionHelpOutput
+}, {
+	description: 'Nested command with action plus having more nested commands defined --help',
+	input: 'nested-command-to-destructure-params --help',
+	output: nestedCommandToDestructureParams
 }, {
 	description: 'Nested command with action plus having more nested commands defined call',
 	input: 'nested-command-set-with-action --param1=A --param2=B',

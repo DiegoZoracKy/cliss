@@ -60,7 +60,11 @@ const cliSpec = {
 		action: async (...args) => {
 			return args.reduce((result, v) => result += v);
 		}
-	}]
+	}, {
+		name: 'nested-command-to-destructure-params',
+		action: ({f1}, [[f2 = 'F2Default']] = [[]]) => ({ f1, f2 })
+	} 
+]
 };
 
 cliss(cliSpec, {
