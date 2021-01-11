@@ -28,7 +28,7 @@
     "object-to-arguments": "^0.1.0",
     "pipe-functions": "^1.3.0",
     "strip-ansi": "^4.0.0",
-    "yargs-parser": "^20.2.4"
+    "yargs-parser": "^13.1.2"
   },
   "devDependencies": {
     "mocha": "^8.2.1"
